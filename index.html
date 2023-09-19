@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국알콜산업 KAI</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/wgnb.css">
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/business.css">
+    <link rel="stylesheet" href="css/green.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/recco.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/stockir.css">
+    <link rel="stylesheet" href="css/office.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+           $("#green .wrap ul li").click(function(){
+                $(this).addClass("current");
+                $(this).siblings().removeClass("current");
+           });
+           //gnb의 li를 click하면 실행하시오
+           $("header .wrap nav ul.gnb li").mouseenter(function(){ //mouseenter 대상영역안으로 마우스가 진입하는 행위
+                $("div.wgnb").slideDown();    //slideDown() 펼쳐지면서 보여지게 해라 
+           });
+
+           //타이틀영역에 마우스엔터하면 실행하시오
+           $("div#title").mouseenter(function(){
+                $("div.wgnb").slideUp();
+           });
+        });
+    </script> 
+</head>
+<body>  
+    <!-- 상단영역 -->
+    <header id="top">
+        <div class="wrap">
+            <nav>
+                <h1 class="h5">
+                    <a href="" class="a">한국알콜산업<span>KAI</span></a>
+                </h1>
+                <ul class="gnb flex">
+                    <li><a href="" class="a">회사소개</a></li>
+                    <li><a href="" class="a">제품소개</a></li>
+                    <li><a href="" class="a">지속가능경영</a></li>
+                    <li><a href="" class="a">투자정보</a></li>
+                    <li><a href="" class="a">홍보센터</a></li>
+                    <li><a href="" class="a">인재채용</a></li>
+                </ul>
+                <div class="flex">
+                    <ul class="lang flex">
+                        <li><a href="" class="a">KOR</a></li>
+                        <li><a href="" class="a">ENG</a></li>
+                        <li><a href="" class="a">CHN</a></li>
+                    </ul>
+                    <form action="" class="search"><button>SEARCH</button></form>
+                </div>
+                <div class="wgnb">
+                    <div class="center flex">
+                        <div class="wsub">
+                            <h2 class="hide">회사소개</h2>
+                            <ul class="text-center">
+                                <li><a href="">회사개요</a></li>
+                                <li><a href="">CEO 인사말</a></li>
+                                <li><a href="">가치체계</a></li>
+                                <li><a href="">연구소</a></li>
+                                <li><a href="">관계사</a></li>
+                                <li><a href="">사업장</a></li>
+                            </ul>
+                        </div>
+                        <div class="wsub">
+                            <h2 class="hide">제품소개</h2>
+                            <ul class="text-center">
+                                <li><a href="">제품정보</a></li>
+                                <li><a href="">주정</a></li>
+                                <li><a href="">석유화학</a></li>
+                                <li><a href="">Color Paste</a></li>
+                                <li><a href="">제품문의</a></li>
+                            </ul>
+                        </div>
+                        <div class="wsub">
+                            <h2 class="hide">지속가능경영</h2>
+                            <ul class="text-center">
+                                <li><a href="">정도경영</a></li>
+                                <li><a href="">환경경영</a></li>
+                                <li><a href="">품질경영</a></li>
+                            </ul>
+                        </div>
+                        <div class="wsub">
+                            <h2 class="hide">투자정보</h2>
+                            <ul class="text-center">
+                                <li><a href="">경영정보</a></li>
+                                <li><a href="">주가정보</a></li>
+                                <li><a href="">재무정보</a></li>
+                                <li><a href="">IR자료실</a></li>
+                            </ul>
+                        </div>
+                        <div class="wsub">
+                            <h2 class="hide">홍보센터</h2>
+                            <ul class="text-center">
+                                <li><a href="">KAI소식</a></li>
+                                <li><a href="">CI소개</a></li>
+                                <li><a href="">사회공헌</a></li>
+                            </ul>
+                        </div>
+                        <div class="wsub">
+                            <h2 class="hide">인재채용</h2>
+                            <ul class="text-center">
+                                <li><a href="">인사제도</a></li>
+                                <li><a href="">채용정보</a></li>
+                                <li><a href="">채용문의</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="ham">전체메뉴</a>
+            </nav>
+        </div>
+    </header>
+    <!--타이틀영역 -->
+    <div id="title" class="height-full">
+        <div class="height-full wrap flex flex-column flex-center flex-align-center">
+            <hgroup>
+                <h2 class="h4 text-center">편리하고 행복한 케미컬</h2>
+                <h3 class="h1">Materials for better world</h3>
+            </hgroup>
+            <a href="" class="scroll">
+                <span></span><span></span><span></span><span></span>
+                스크롤
+            </a>
+        </div>
+    </div>
+    <!-- 내용영역 -->
+    <main>
+        <section id="business">
+            <div class="wrap paddingB100">
+                <h2 class="h3">BUSINESS</h2>
+                <article>
+                    <h3 class="h4">주정 <br /> <span class="h2 block">Ethanol</span></h3>
+                    <p class="p">30여 년간의 노하우를 바탕으로<span class="block"></span>
+                        고순도, 고품질의 주정을 생산합니다. 
+                    </p>
+                    <a href="" class="more">VIEW MORE</a>
+                </article>
+                <article>
+                    <h3 class="h4">석유화학 <span class="h2 block">Chemistry</span></h3>
+                    <p class="p"> 국내 유일의 초산에틸, 초산부틸 생산업체로<span class="block"></span>
+                        우수한 품질로 국내시장을 선도합니다.
+                    </p>
+                    <a href="" class="more">VIEW MORE</a>
+                </article>
+                <article>
+                    <h3 class="h4">컬러 페이스트 <span class="h2 block">Color paste</span></h3>
+                    <p class="p">국내 최초 개발에 성공하여<span class="block"></span>
+                        디스플레이의 핵심소재로 사용되고 있습니다. 
+                    </p>
+                    <a href="" class="more">VIEW MORE</a>
+                </article>
+            </div>
+        </section>
+        <section id="green">
+            <div class="wrap paddingB100 paddingT50">
+                <h2 class="h3 text-center">Green Chemical KAI</h2>
+                <ul class="flex flex-center">
+                    <li>
+                        <h3 class="h4">R&D연구소</h3>
+                        <p class="p">새로운 성장동력 확보를 위한 적극적인<span class="block"></span>
+                            연구개발 활동을 진행하고 있습니다.
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="h4">환경안전</h3>
+                        <p class="p">모든 제품 생산 및 서비스 활동에서 환경 영향을<span class="block"></span>
+                            최소화하고 무재해 한국알콜산업이 되도록<span class="block"></span>
+                            하겠습니다.</p>
+                    </li>
+                    <li>
+                        <h3 class="h4">정도경영</h3>
+                        <p class="p">정도경영을 바탕으로 성실한 기업 활동을 통한<span class="block"></span>
+                            최고의 품질과 서비스를 지속적으로 제공합니다.</p>
+                    </li>
+                </ul>
+                <a href="" class="siteview"><span>SITE VIEW</span></a>
+            </div>
+        </section>
+        <section id="about">
+            <div class="wrap paddingT100 paddingB100">
+                <h2 class="h2 text-center marginB50">About KAI</h2>
+                <ul class="flex flex-center text-center">
+                    <li>
+                        <figure>
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="85px" height="72px" viewBox="0 0 85 72" enable-background="new 0 0 85 72" xml:space="preserve" focusable="false">
+                                <path fill="none" stroke="#1D9BD6" stroke-width="2" stroke-miterlimit="10" d="M37,3h11" style="stroke-dashoffset: 0.00001px; stroke-dasharray: none;"></path>
+                                <path fill="none" stroke="#1D9BD6" stroke-width="2" stroke-miterlimit="10" d="M45,69H27V34.985c0-2.489,1.244-4.815,3.315-6.195
+                                    c1.713-1.142,2.877-2.942,3.215-4.972L36,9 M48,9l2.47,14.818c0.338,2.03,1.502,3.83,3.215,4.972C55.756,30.17,57,32.496,57,34.985
+                                    V69H39" style="stroke-dashoffset: 0.00001px; stroke-dasharray: none;"></path>
+                            </svg>
+                        </figure>
+                        <h3 class="h4">고품질의 정제주정 생산</h3>
+                        <p class="p">30여 년간의 노하우를 바탕으로 고순도, 고품질의<span class="block"></span>
+                            정제주정만을 공급합니다.</p>
+                    </li>
+                    <li>
+                        <figure>
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="85px" height="72px" viewBox="0 0 85 72" enable-background="new 0 0 85 72" xml:space="preserve" focusable="false">
+                                <path fill="none" stroke="#1D9BD6" stroke-width="2" stroke-miterlimit="10" d="M17.129,53.895H1.662V35.698l16.377-16.377
+                                    c5.557,7.611,7.44,9.7,14.553,15.881c6.974,6.062,13.652,17.782,10.011,27.79c-6.125,16.842-34.572,0,3.641-39.122L65.805,4.31
+                                    L84,27.51V70H52.156" style="stroke-dashoffset: 0.00001px; stroke-dasharray: none;"></path>
+                                <path fill="none" stroke="#1D9BD6" stroke-width="2" stroke-miterlimit="10" d="M73.537,34.788v34.757" style="stroke-dashoffset: 0.00001px; stroke-dasharray: none;"></path>
+                                <path fill="none" stroke="#1D9BD6" stroke-width="2" stroke-miterlimit="10" d="M63.529,46.615v22.93" style="stroke-dashoffset: 0.00001px; stroke-dasharray: none;"></path>
+                                <path fill="none" stroke="#1D9BD6" stroke-width="2" stroke-miterlimit="10" d="M7.273,30.694V19.321" style="stroke-dashoffset: 0.00001px; stroke-dasharray: none;"></path>
+                                <path fill="none" stroke="#1D9BD6" stroke-width="2" stroke-miterlimit="10" d="M7.273,16.137v-5.914" style="stroke-dashoffset: 0.00001px; stroke-dasharray: none;"></path>
+                                <path fill="none" stroke="#1D9BD6" stroke-width="2" stroke-miterlimit="10" d="M7.273,1.125v5.914" style="stroke-dashoffset: 0.00001px; stroke-dasharray: none;"></path>
+                            </svg>
+                        </figure>
+                        <h3 class="h4">국내유일의 공업용 에탄올 생산</h3>
+                        <p class="p">우수한 품질과 원가절감을 위한 끊임없는 연구 개발로<span class="block"></span>
+                            공업용 에탄올 시장을 이끌어갑니다.</p>
+                    </li>
+                    <li>
+                        <figure>
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="85px" height="72px" viewBox="0 0 85 72" enable-background="new 0 0 85 72" xml:space="preserve" focusable="false">
+                                <path fill="none" stroke="#1D9BD6" stroke-width="2" stroke-miterlimit="10" d="M83,70.555H1" style="stroke-dashoffset: 0.00001px; stroke-dasharray: none;"></path>
+                                <path fill="none" stroke="#1D9BD6" stroke-width="2" stroke-miterlimit="10" d="M13,55.555v16" style="stroke-dashoffset: 0.00001px; stroke-dasharray: none;"></path>
+                                <path fill="none" stroke="#1D9BD6" stroke-width="2" stroke-miterlimit="10" d="M54,39.555v30" style="stroke-dashoffset: 0.00001px; stroke-dasharray: none;"></path>
+                                <path fill="none" stroke="#1D9BD6" stroke-width="2" stroke-miterlimit="10" d="M70,69.555v-45" style="stroke-dashoffset: 0.00001px; stroke-dasharray: none;"></path>
+                                <path fill="none" stroke="#1D9BD6" stroke-width="2" stroke-miterlimit="10" d="M5.157,34.885c0,0,13.841-9.886,29-1.318
+                                    C49.316,42.135,46,57.555,36,57.555c-7.315,0-18-13-3.384-32.054c5.6-7.301,13.666-12.3,22.308-15.459
+                                    c4.419-1.615,9.886-3.194,16.144-4.156" style="stroke-dashoffset: 0.00001px; stroke-dasharray: none;"></path>
+                                <path fill="none" stroke="#1D9BD6" stroke-width="2" stroke-miterlimit="10" d="M63.785,0.838L71.5,5.854l-5.016,7.715" style="stroke-dashoffset: 0.00001px; stroke-dasharray: none;"></path>
+                            </svg>
+                        </figure>
+                        <h3 class="h4">성장을 위한 지속적인 투자</h3>
+                        <p class="p">안정적인 사업구조에 안주하지 않고<span class="block"></span>
+                            제품군의 다양화를 위한 노력을 합니다.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="recco">
+            <div class="wrap flex paddingB50">
+                <article class="recruit">
+                    <hgroup>
+                        <h2 class="h3">Recruit</h2>
+                        <h3 class="h5">채용정보</h3>
+                    </hgroup>
+                    <p class="p">한국알콜산업㈜ 본사 자금팀(자금관리) 경력 채용</p>
+                    <p class="p">2020.09.23 ~ 2020.10.11</p>
+                    <a href="" class="moreCir">더보기</a>
+                </article>
+                <article class="corpo flex flex-column flex-align-center">
+                    <hgroup class="flex flex-column flex-align-center">
+                        <h2 class="h3">Corporate Social <span class="block">Responsibility</span></h2>
+                        <h3 class="h5">한국알콜산업 사회공헌</h3>
+                    </hgroup>
+                    <a href="" class="moreCir">더보기</a>
+                </article>
+            </div>
+        </section>
+        <section id="news">
+            <div class="wrap padding50 flex flex-column flex-align-center">
+                <h2 class="h2">NEWS</h2>
+                <article>
+                    <a href="">
+                        <h3 class="h5">한국알콜산업 2022년 결산보고</h3>
+                        <p class="p">제39기 결 산 공 고 연 결 재 무 상 태 표 (2022년 12월 31일 현재) 단위 : 원 자산 Ⅰ. 유동자산 180,686,786,262 1. 현금및현금성자산 38,000,809,812 2. 매출채권및기타채권 84,453,430,406 단기매출채권 82,923,762,895 대손충당금 △1,454,435,762 단기미수금 2,626,274,426 대손충당금 △142,257,000 단기미수수익 235,870,301 선급금 88,565,846 대손충당금 △83,500,000 단기선급비용 259,149,700 3. 재고자산 34,374,402,504 상품 280,946,785 평가충당금 △3,519,720 제품 17,583,560,643 평가충당금 […]</p>
+                        <time>2023.03<span>28</span></time>
+                        <span class="moreCir">바로가기</span>
+                    </a>
+                </article>
+                <a href="" class="list">list</a>
+            </div>
+        </section>
+        <section id="stockir">
+            <div class="wrap padding50 flex">
+                <article class="stock">
+                    <h2 class="h5">주가정보</h2>
+                    <p class="price h3">12,650</p>
+                    <time>2023-07-31 09:28:59</time>
+                    <p class="up">+10(0.08%)</p>
+                </article>
+                <article class="ir">
+                    <h2 class="h5">IR공지</h2>
+                    <ul>
+                        <li>
+                            <a href="" class="p">
+                                [공시자료] 주식등의대량보유상황보고서(약식)<time>2023-07-17</time>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="p">
+                                [공시자료] 분기보고서 (2023.03)<time>2023-05-15</time>
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <section id="office">
+            <div class="wrap paddingT50">
+                <h2 class="hide">사업장</h2>
+                <ul class="flex">
+                    <li>
+                        <a href="" class="flex flex-column flex-align-center flex-center">
+                            <hgroup>
+                                <h3 class="h5">본사</h3>
+                                <h4 class="h4">GIHEUNG OFFICE</h4>
+                            </hgroup>
+                            <span class="arrow">자세히 보기</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="flex flex-column flex-align-center flex-center">
+                            <hgroup>
+                                <h3 class="h5">지점/공장</h3>
+                                <h4 class="h4">ULSAN FACTORY</h4>
+                            </hgroup>
+                            <span class="arrow">자세히 보기</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <!-- 하단영역 -->
+    <footer>
+        <div class="wrap padding50">
+            <ul class="fnb flex">
+                <li><a href="">정도경영</a></li>
+                <li><a href="">인재채용</a></li>
+                <li><a href="">사이트맵</a></li>
+                <li><a href="">개인정보 취급(처리)방침</a></li>
+            </ul>
+            <address>
+                기흥본사 : 경기도 용인시 기흥구 탑실로 35번길 14 TEL / <a href="">031 - 881 - 8000</a> FAX / 031 - 282 - 6851<br>
+                울산지점/공장 : 울산광역시 남구 상개로 66 TEL / <a href="">052 - 259 - 4700 FAX</a> / 052 - 259 - 4759
+            </address>
+            <p class="p copyright">COPYRIGHT (C) 2017 KAI CO., LTD. ALL RIGHTS RESERVED. DESIGNED BY STUDIO-JT.</p>
+            <div class="corp">
+                <h2 class="hide">협력업체</h2>
+                <ul>
+                    <li><a href="">케이씨엔에이</a></li>
+                    <li><a href="">이엔에프테크놀로지</a></li>
+                    <li><a href="">퓨릿</a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="#top" class="btop">맨위로 가기</a>
+    </footer>
+</body>
+</html>
